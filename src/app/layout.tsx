@@ -1,4 +1,12 @@
-import './globals.css';
+import './styles/globals.css';
+
+import { Ubuntu } from 'next/font/google';
+
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-ubuntu',
+});
 
 export default function RootLayout({
   children,
@@ -8,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` antialiased`}
+        className={ubuntu.className}
       >
         {children}
       </body>

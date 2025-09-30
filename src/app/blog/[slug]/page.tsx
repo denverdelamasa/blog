@@ -2,14 +2,15 @@ import { getAllSlugs, getPostBySlug } from '@/lib/posts'
 import React from 'react'
 import GiscusComments from '@/components/GiscusComments'
 
-type Params = { params: { slug: string } }
+type Params = { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
   const slugs = getAllSlugs()
   return slugs.map(slug => ({ slug }))
 }
 
-export default async function PostPage({ params }: Params) {
+export default async function PostPage(props: Params) {
+  const params = await props.params;
   const { slug } = params
   const post = await getPostBySlug(slug)
 
