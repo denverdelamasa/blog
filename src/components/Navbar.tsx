@@ -61,7 +61,7 @@ export default function Navbar() {
           </div>
           
           <button 
-            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#ffd43b] flex items-center justify-center transition-all duration-300 hover:scale-105"
+            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#ffd43b] flex items-center justify-center transition-all ease-out duration-300 hover:scale-105"
             onClick={toggleNavbar}
             aria-label="Toggle menu"
           >
