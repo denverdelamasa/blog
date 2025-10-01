@@ -31,7 +31,7 @@ export default function Navbar() {
               </span>
           </div>
         </Link>
-        <Link href="#aboutme">
+        <Link href="/#about">
           <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
             <span className="text-xl">
               <i className="bi bi-info-circle mr-2 my-auto"></i>

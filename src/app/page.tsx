@@ -11,7 +11,7 @@ export default function Home() {
         <section className="min-h-[100vh] bg-white neo-brutalist">
 
         </section>
-        <section id="aboutme" className="min-h-[100vh] bg-[#ffd43b] neo-brutalist">
+        <section id="about" className="min-h-[100vh] bg-[#ffd43b] neo-brutalist">
 
         </section>
       </main>
