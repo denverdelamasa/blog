@@ -16,7 +16,9 @@ export default function Navbar() {
 
       </div>
       <div className="navbar-end">
-
+          <div className="w-[8vh] h-[8vh] m-2 neo-brutalist">
+            <i className="bi bi-github"></i>
+          </div>
       </div>
     </nav>
   );

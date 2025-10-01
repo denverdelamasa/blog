@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@giscus/react": "^3.1.0",
+    "bootstrap-icons": "^1.13.1",
     "gray-matter": "^4.0.3",
     "next": "15.5.4",
     "react": "19.1.0",
