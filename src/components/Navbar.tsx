@@ -23,10 +23,9 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Desktop navigation */}
         <div className="navbar-center hidden md:flex flex-row gap-8">
           <Link href="/">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300 hover:scale-105">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -34,7 +33,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/blog">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300 hover:scale-105">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -42,7 +41,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/#about">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300 hover:scale-105">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
@@ -54,14 +53,14 @@ export default function Navbar() {
         <div className="navbar-end flex items-center">
           <div className={`${isExpanded ? 'hidden' : 'block'} md:block`}>
             <Link href="https://github.com/denverdelamasa/blog" target="_blank">
-              <div className="w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300 hover:scale-105">
+              <div className="w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300">
                 <i className="bi bi-github text-white text-[5vh]"></i>
               </div>
             </Link>
           </div>
           
           <button 
-            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#ffd43b] flex items-center justify-center transition-all ease-out duration-300 hover:scale-105"
+            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#ffd43b] flex items-center justify-center transition-all ease-out duration-300"
             onClick={toggleNavbar}
             aria-label="Toggle menu"
           >
@@ -74,10 +73,10 @@ export default function Navbar() {
         <div className="flex flex-col items-center gap-4 pb-4">
           <Link 
             href="/" 
-            className="w-full text-center transition-transform duration-300 hover:scale-105"
+            className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -86,10 +85,10 @@ export default function Navbar() {
           </Link>
           <Link 
             href="/blog" 
-            className="w-full text-center transition-transform duration-300 hover:scale-105"
+            className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -98,10 +97,10 @@ export default function Navbar() {
           </Link>
           <Link 
             href="/#about" 
-            className="w-full text-center transition-transform duration-300 hover:scale-105"
+            className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
