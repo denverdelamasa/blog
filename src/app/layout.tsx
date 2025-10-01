@@ -1,4 +1,5 @@
 import './styles/globals.css';
+import './styles/footer-grid.css';
 
 import { Ubuntu } from 'next/font/google';
 
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={ubuntu.className}
+        className={`${ubuntu.className}, bg-white`}
       >
         {children}
       </body>
