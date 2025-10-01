@@ -23,11 +23,11 @@ export default function Navbar() {
               </span>
           </div>
         </Link>
-        <Link href="/posts">
+        <Link href="/blog">
           <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
             <span className="text-xl">
               <i className="bi bi-newspaper mr-2 my-auto"></i>
-              Blog
+                Blog
               </span>
           </div>
         </Link>
