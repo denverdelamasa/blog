@@ -12,7 +12,7 @@ export default function HomepageHero() {
                     ● a place where I jot stuff down.
                 </p>
             </div>
-            <div className="bg-[#ffd43b] neo-brutalist w-full md:min-w-[500px] h-[500px]">
+            <div className="bg-[#ffd43b] neo-brutalist w-full md:min-w-[500px] h-64 md:h-[500px]">
                 3D spline here
             </div>
         </div>

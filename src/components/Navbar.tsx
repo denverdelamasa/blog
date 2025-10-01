@@ -1,51 +1,114 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <nav className="flex m-2 bg-[#ffd43b] neo-brutalist h-[12vh]">
-      <div className="navbar-start">
-        <Link href="https://denverdelamasa.vercel.app" target="_blank">
-          <div className="avatar">
-            <div className="w-[8vh] m-4 rounded-full neo-brutalist">
-              <img
-                alt="avatar"
-                src="/avatar.png" />
+    <nav className={`flex flex-col m-2 bg-[#ffd43b] neo-brutalist md:h-[12vh] ${isExpanded ? 'h-auto' : 'h-[14h]'} transition-all duration-500 ease-in-out overflow-hidden`}>
+      <div className="flex flex-row w-full md:h-full h-[12vh]">
+        <div className="navbar-start">
+          <Link href="https://denverdelamasa.vercel.app" target="_blank">
+            <div className="avatar">
+              <div className="w-[8vh] m-4 rounded-full neo-brutalist">
+                <img alt="avatar" src="/avatar.png" />
+              </div>
             </div>
-          </div>
-        </Link>
-      </div>
-      <div className="navbar-center flex flex-row gap-8">
-        <Link href="/">
-          <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
-            <span className="text-xl">
-              <i className="bi bi-house mr-2 my-auto"></i>
+          </Link>
+        </div>
+
+        {/* Desktop navigation */}
+        <div className="navbar-center hidden md:flex flex-row gap-8">
+          <Link href="/">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300 hover:scale-105">
+              <span className="text-xl">
+                <i className="bi bi-house mr-2 my-auto"></i>
                 Home
               </span>
-          </div>
-        </Link>
-        <Link href="/blog">
-          <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
-            <span className="text-xl">
-              <i className="bi bi-newspaper mr-2 my-auto"></i>
+            </div>
+          </Link>
+          <Link href="/blog">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300 hover:scale-105">
+              <span className="text-xl">
+                <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
               </span>
+            </div>
+          </Link>
+          <Link href="/#about">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300 hover:scale-105">
+              <span className="text-xl">
+                <i className="bi bi-info-circle mr-2 my-auto"></i>
+                About
+              </span>
+            </div>
+          </Link>
+        </div>
+
+        <div className="navbar-end flex items-center">
+          <div className={`${isExpanded ? 'hidden' : 'block'} md:block`}>
+            <Link href="https://github.com/denverdelamasa/blog" target="_blank">
+              <div className="w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300 hover:scale-105">
+                <i className="bi bi-github text-white text-[5vh]"></i>
+              </div>
+            </Link>
           </div>
-        </Link>
-        <Link href="/#about">
-          <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
-            <span className="text-xl">
-              <i className="bi bi-info-circle mr-2 my-auto"></i>
-              About
-            </span>
-          </div>
-        </Link>
+          
+          <button 
+            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#ffd43b] flex items-center justify-center transition-all duration-300 hover:scale-105"
+            onClick={toggleNavbar}
+            aria-label="Toggle menu"
+          >
+            <i className={`bi ${isExpanded ? 'bi-x' : 'bi-list'} text-black text-[5vh] transition-transform duration-500 ${isExpanded ? 'rotate-180' : ''}`}></i>
+          </button>
+        </div>
       </div>
-      <div className="navbar-end">
-        <Link href="https://github.com/denverdelamasa/blog" target="_blank">
-          <div className="w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#24292d] flex items-center justify-center">
-            <i className="bi bi-github text-white text-[5vh]"></i>
-          </div>
-        </Link>
+
+      <div className={`md:hidden w-full transition-all duration-500 ease-out ${isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className="flex flex-col items-center gap-4 pb-4">
+          <Link 
+            href="/" 
+            className="w-full text-center transition-transform duration-300 hover:scale-105"
+            onClick={() => setIsExpanded(false)}
+          >
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300 hover:-translate-y-1">
+              <span className="text-xl">
+                <i className="bi bi-house mr-2 my-auto"></i>
+                Home
+              </span>
+            </div>
+          </Link>
+          <Link 
+            href="/blog" 
+            className="w-full text-center transition-transform duration-300 hover:scale-105"
+            onClick={() => setIsExpanded(false)}
+          >
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300 hover:-translate-y-1">
+              <span className="text-xl">
+                <i className="bi bi-newspaper mr-2 my-auto"></i>
+                Blog
+              </span>
+            </div>
+          </Link>
+          <Link 
+            href="/#about" 
+            className="w-full text-center transition-transform duration-300 hover:scale-105"
+            onClick={() => setIsExpanded(false)}
+          >
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300 hover:-translate-y-1">
+              <span className="text-xl">
+                <i className="bi bi-info-circle mr-2 my-auto"></i>
+                About
+              </span>
+            </div>
+          </Link>
+        </div>
       </div>
     </nav>
   );
