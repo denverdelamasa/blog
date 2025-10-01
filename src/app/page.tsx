@@ -1,5 +1,5 @@
 import HomepageHero from "./HomepageHero";
-
+import About from "./About";
 export default function Home() {
   return (
     <>
@@ -14,7 +14,7 @@ export default function Home() {
 
         </section>
         <section id="about" className="min-h-[100vh] bg-[#ffd43b] neo-brutalist">
-
+          <About/>
         </section>
       </main>
     </>
