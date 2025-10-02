@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-        <div className="hero-content flex flex-col text-black w-auto h-full md:justify-start md:items-start">
+        <div className="hero-content flex flex-col text-black w-auto h-full md:justify-start md:items-start my-12">
             <div className="flex flex-row">
                 <div className="my-auto w-[8vh] h-[8vh] m-4 neo-brutalist  flex items-center justify-center">
                     <i className="bi bi-info-circle text-black text-[5vh]"></i>
