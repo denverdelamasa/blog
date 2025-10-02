@@ -81,7 +81,7 @@ export default function About() {
                                 </div>
                                 <span className="my-auto">
                                     <h4>
-                                        instagram.com/wandedanvers
+                                        instagram.com/wanedanvers
                                     </h4>
                                 </span>
                             </li>

@@ -32,7 +32,7 @@ export default async function PopularBlogs() {
             className="neo-brutalist flex flex-col justify-between bg-white"
           >
             <div>
-              <div className="flex justify-end h-14 bg-[#e9ecef] mb-2 px-2 border-b-4 border-black">
+              <div className="flex justify-end h-16 bg-[#e9ecef] mb-2 px-4 border-b-4 border-black">
                 {idx === 0 && (
                     <span className="neo-brutalist inline-block bg-red-500 text-white text-sm font-bold py-1 px-3 my-auto">
                         Hot!
