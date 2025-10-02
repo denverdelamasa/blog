@@ -26,11 +26,11 @@ export default function About() {
                         <p className="text-lg italic">
                             Web Developer. Illustrator. Tech Support
                         </p>
-                        <p className="text-sm mt-2">
+                        <p className="text-sm mt-2 max-w-prose">
                             I like Illustrating, designing, creating, and fixing stuff. I guess being 
                             a creative at heart is why I naturally leaned into web design.
                         </p>
-                        <p className="text-sm mt-2">
+                        <p className="text-sm mt-2 max-w-prose">
                             When I’m not coding, I’m usually sketching characters or sitting outside 
                             with my cat, listening to music and watching the sunset. I also play guitar, 
                             bass, and drums — and I can sing decently, thanks to the church I grew up with.  
@@ -44,12 +44,57 @@ export default function About() {
                         </span>
                     </div>
                     <div className="m-4 text-start">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul className="flex flex-col m-0 gap-4">
+                            <li className="flex flex-row gap-4">
+                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300">
+                                    <i className="bi bi-envelope-at text-white text-[3vh]"></i>
+                                </div>
+                                <span className="my-auto">
+                                    <h4>
+                                        denver.delamasa@gmail.com
+                                    </h4>
+                                </span>
+                            </li>
+                            <li className="flex flex-row gap-4">
+                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300">
+                                    <i className="bi bi-github text-white text-[3vh]"></i>
+                                </div>
+                                <span className="my-auto">
+                                    <h4>
+                                        github.com/denverdelamasa
+                                    </h4>
+                                </span>
+                            </li>
+                            <li className="flex flex-row gap-4">
+                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300">
+                                    <i className="bi bi-linkedin text-white text-[3vh]"></i>
+                                </div>
+                                <span className="my-auto">
+                                    <h4>
+                                        linkedin.com/in/denverdelamasa
+                                    </h4>
+                                </span>
+                            </li>
+                            <li className="flex flex-row gap-4">
+                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300">
+                                    <i className="bi bi-instagram text-white text-[3vh]"></i>
+                                </div>
+                                <span className="my-auto">
+                                    <h4>
+                                        instagram.com/wandedanvers
+                                    </h4>
+                                </span>
+                            </li>
+                            <li className="flex flex-row gap-4">
+                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300">
+                                    <i className="bi bi-facebook text-white text-[3vh]"></i>
+                                </div>
+                                <span className="my-auto">
+                                    <h4>
+                                        facebook.com/wndnvrs
+                                    </h4>
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </div>
