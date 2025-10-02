@@ -17,34 +17,44 @@ export type PostMeta = {
 export async function getAllPosts(): Promise<PostMeta[]> {
   const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'))
   const posts = files.map(file => {
-    const slug = file.replace(/\.md$/, '')
+    const fileSlug = file.replace(/\.md$/, '')
     const raw = fs.readFileSync(path.join(postsDir, file), 'utf-8')
     const { data } = matter(raw)
     return {
-      title: slug,
+      title: data.title ?? fileSlug,
       date: data.date ?? null,
       excerpt: data.excerpt ?? null,
       tags: data.tags ?? [],
-      slug,
+      slug: data.slug ?? fileSlug, 
     } as PostMeta
   })
   return posts.sort((a, b) => (a.date && b.date ? (a.date < b.date ? 1 : -1) : 0))
 }
 
 export async function getPostBySlug(slug: string) {
-  const full = path.join(postsDir, `${slug}.md`)
-  const raw = fs.readFileSync(full, 'utf-8')
-  const { data, content } = matter(raw)
-  const processed = await remark().use(html).process(content)
-  const contentHtml = processed.toString()
-  return {
-    frontMatter: data,
-    contentHtml,
-    slug,
+  const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'))
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(postsDir, file), 'utf-8')
+    const { data, content } = matter(raw)
+    const fileSlug = data.slug ?? file.replace(/\.md$/, '')
+    if (fileSlug === slug) {
+      const processed = await remark().use(html).process(content)
+      const contentHtml = processed.toString()
+      return {
+        frontMatter: data,
+        contentHtml,
+        slug: fileSlug,
+      }
+    }
   }
+  throw new Error(`Post with slug "${slug}" not found`)
 }
 
 export function getAllSlugs() {
   const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'))
-  return files.map(f => f.replace(/\.md$/, ''))
+  return files.map(f => {
+    const raw = fs.readFileSync(path.join(postsDir, f), 'utf-8')
+    const { data } = matter(raw)
+    return data.slug ?? f.replace(/\.md$/, '')
+  })
 }

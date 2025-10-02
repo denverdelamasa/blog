@@ -1,9 +1,9 @@
 ---
-title: "test"
-slug: "test"
-date: "2025-09-30"
-excerpt: "idk what excerpt means. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-tags: ["test", "phone", "idk", "tags"]
+title: "New post"
+slug: "new-post"
+date: "2025-10-03"
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. bla bla bla bla"
+tags: ["test", "pc", "feature"]
 ---
 
 # This is a test post!
