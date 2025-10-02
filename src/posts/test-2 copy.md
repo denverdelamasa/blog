@@ -1,7 +1,7 @@
 ---
 title: "Hide this post"
 date: "2025-10-2"
-excerpt: "This post should be hidden in the homepage re"
+excerpt: "This post should be hidden in the homepage, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 tags: ["Test", "Copilot"]
 ---
 

@@ -26,12 +26,12 @@ export default async function RecentBlogs() {
             >
                 <div>
                     <div className="flex h-12 bg-[#e9ecef] mb-2 p-2 border-b-4 border-black">
-                        <h3 className="text-black text-2xl font-semibold my-auto">{post.title}</h3>
                     </div>
                     <div className="p-4">
+                        <h3 className="text-black text-2xl font-semibold mb-2">{post.title}</h3>
                         <p className="text-gray-400 text-sm mb-4">{post.date}</p>
                         {post.excerpt && (
-                            <p className="mb-4 text-gray-900">{post.excerpt}</p>
+                            <p className="mb-4 text-gray-900 line-clamp-3">{post.excerpt}</p>
                         )}
                     </div>
                 </div>

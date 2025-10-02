@@ -9,10 +9,10 @@ export default function Home() {
         <section className="hero min-h-[70vh] md:min-h-[88vh] bg-white">
           <HomepageHero/>
         </section>
-        <section className="min-h-[100vh] bg-[#1971c2]">
+        <section className="min-h-[100vh] bg-[#1971c2] rounded-[8px]">
 
         </section>
-        <section className="h-auto bg-white">
+        <section className="h-auto bg-white  rounded-[8px] border-4 border-black">
           <RecentBlogs/>
         </section>
         <section id="about" className="h-auto bg-[#ffd43b] rounded-[8px]">

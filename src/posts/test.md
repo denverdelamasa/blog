@@ -1,7 +1,7 @@
 ---
 title: "Test Post"
 date: "2025-09-30"
-excerpt: "idk what excerpt means"
+excerpt: "idk what excerpt means. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 tags: ["test", "phone", "idk", "tags"]
 ---
 
