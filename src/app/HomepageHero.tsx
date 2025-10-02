@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Spline3D from "@/components/Spline3D";
 
 export default function HomepageHero() {
   return (
@@ -12,8 +13,13 @@ export default function HomepageHero() {
                     ● a place where I jot stuff down.
                 </p>
             </div>
-            <div className="bg-[#ffd43b] neo-brutalist w-full md:min-w-[500px] h-64 md:h-[500px]">
-                3D spline here
+            <div className="bg-white neo-brutalist w-full min-h-[300px] max-h-[400px] flex flex-col">
+                <div className="w-full h-12 bg-[#e9ecef] border-black border-b-4 flex">
+                    <span className="w-full text-start mx-4 my-auto h-auto">
+                        <h2 className="text-2xl"></h2>
+                    </span>
+                </div>
+                <Spline3D/>
             </div>
         </div>
     </>
