@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <div className="navbar-center hidden md:flex flex-row gap-8">
           <Link href="/">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -33,7 +33,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/blog">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -41,7 +41,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/#about">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white transition-all duration-300">
+            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
@@ -53,7 +53,7 @@ export default function Navbar() {
         <div className="navbar-end flex items-center">
           <div className={`${isExpanded ? 'hidden' : 'block'} md:block`}>
             <Link href="https://github.com/denverdelamasa/blog" target="_blank">
-              <div className="w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#24292d] flex items-center justify-center transition-all duration-300">
+              <div className="w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#24292d] flex items-center justify-center">
                 <i className="bi bi-github text-white text-[5vh]"></i>
               </div>
             </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300">
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -88,7 +88,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300">
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -100,7 +100,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform transition-all duration-300">
+            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
