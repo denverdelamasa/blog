@@ -19,7 +19,7 @@ export default function GiscusComments({ mapping = 'pathname' }: Props) {
 
   return (
     <Giscus
-      repo={repo}
+      repo={repo as `${string}/${string}`}
       repoId={repoId}
       category={category}
       categoryId={categoryId}

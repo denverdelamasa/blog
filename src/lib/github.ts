@@ -35,7 +35,21 @@ async function fetchDiscussions(slugs: string[], posts: PostMeta[]) {
     }
   `;
 
-  const data = await client.request(query);
+  const data = await client.request(query) as {
+    repository: {
+      discussions: {
+        nodes: Array<{
+          title: string;
+          number: number;
+          comments: { totalCount: number };
+          reactionGroups: Array<{
+            content: string;
+            users: { totalCount: number };
+          }>;
+        }>;
+      };
+    };
+  };
   const discussions = data.repository.discussions.nodes;
   console.log("Fetched discussions:", discussions);
 
