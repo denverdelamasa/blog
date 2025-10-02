@@ -22,7 +22,7 @@ export default async function RecentBlogs() {
             {latestPosts.map((post) => (
             <div
                 key={post.slug}
-                className="neo-brutalist flex flex-col justify-between"
+                className="neo-brutalist flex flex-col justify-between bg-white"
             >
                 <div>
                     <div className="flex h-12 bg-[#e9ecef] mb-2 p-2 border-b-4 border-black">

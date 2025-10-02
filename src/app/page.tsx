@@ -1,4 +1,5 @@
 import HomepageHero from "./HomepageHero";
+import PopularBlogs from "@/components/blog-components/PopularBlogs"
 import RecentBlogs from "@/components/blog-components/RecentBlogs";
 import About from "./About";
 
@@ -10,7 +11,7 @@ export default function Home() {
           <HomepageHero/>
         </section>
         <section className="min-h-[100vh] bg-[#1971c2] rounded-[8px]">
-
+          <PopularBlogs/>
         </section>
         <section className="h-auto bg-white border-2 border-black rounded-[8px]">
           <RecentBlogs/>

@@ -1,5 +1,5 @@
 ---
-title: "Testing part 2"
+title: "test-2"
 date: "2025-10-2"
 excerpt: "Card text here... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 tags: ["Test", "Copilot"]

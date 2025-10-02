@@ -21,7 +21,7 @@ export async function getAllPosts(): Promise<PostMeta[]> {
     const raw = fs.readFileSync(path.join(postsDir, file), 'utf-8')
     const { data } = matter(raw)
     return {
-      title: data.title ?? slug,
+      title: slug,
       date: data.date ?? null,
       excerpt: data.excerpt ?? null,
       tags: data.tags ?? [],
