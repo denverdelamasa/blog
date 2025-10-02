@@ -39,7 +39,7 @@ export default async function RecentBlogs() {
                     href={`/blog/${post.slug}`}
                     className="m-4 neo-brutalist bg-[#ffd43b] px-4 py-2 text-black w-fit"
                 >
-                    View &rarr;
+                    Read <i className="bi bi-arrow-right"></i>
                 </Link>
             </div>
             ))}
@@ -49,6 +49,7 @@ export default async function RecentBlogs() {
                 href={`/blog`}
                 className="neo-brutalist bg-[#ffd43b] px-4 py-2 text-black w-fit"
             >
+                <i className="bi bi-newspaper mr-2"></i>
                 View More
             </Link>
         </div>

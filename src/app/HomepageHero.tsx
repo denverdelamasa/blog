@@ -13,10 +13,14 @@ export default function HomepageHero() {
                     ● a place where I jot stuff down.
                 </p>
             </div>
-            <div className="bg-white neo-brutalist w-full min-h-[300px] max-h-[400px] flex flex-col">
-                <div className="w-full h-12 bg-[#e9ecef] border-black border-b-4 flex">
-                    <span className="w-full text-start mx-4 my-auto h-auto">
-                        <h2 className="text-2xl"></h2>
+            <div className="bg-white neo-brutalist w-full min-h-[300px] max-h-[600px] flex flex-col">
+                <div className="w-full h-14 bg-[#e9ecef] border-black border-b-4 flex">
+                    <span className="flex w-full justify-end mx-4 my-auto h-auto">
+                        <Link href="https://app.spline.design/file/231390a6-afb6-47eb-b015-b4914e1bdc0f" target="_blank">
+                            <div className="neo-brutalist w-fit bg-green-400">
+                                <h2 className="text-xs m-2">Open in Spline</h2>
+                            </div>
+                        </Link>
                     </span>
                 </div>
                 <Spline3D/>
