@@ -1,5 +1,5 @@
 import HomepageHero from "./HomepageHero";
-import RecentBlogs from "@/components/RecentBlogs";
+import RecentBlogs from "@/components/blog-components/RecentBlogs";
 import About from "./About";
 
 export default function Home() {

@@ -1,6 +1,6 @@
 import { getAllSlugs, getPostBySlug } from '@/lib/posts'
 import React from 'react'
-import GiscusComments from '@/components/GiscusComments'
+import GiscusComments from '@/components/blog-components/GiscusComments'
 
 type Params = { params: Promise<{ slug: string }> }
 

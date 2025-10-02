@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts, PostMeta } from "../lib/posts";
+import { getAllPosts, PostMeta } from "../../lib/posts";
 
 export default async function RecentBlogs() {
   // Fetch all posts and take the latest 3
