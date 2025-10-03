@@ -46,53 +46,53 @@ export default function About() {
                     <div className="m-4 text-start">
                         <ul className="flex flex-col m-0 gap-4">
                             <li className="flex flex-row gap-4">
-                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-white flex items-center justify-center">
+                                <div className="w-10 h-10 neo-brutalist bg-white flex items-center justify-center">
                                     <i className="bi bi-envelope-at text-black text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h4>
+                                    <h6 className="break-all text-xs">
                                         denver.delamasa@gmail.com
-                                    </h4>
+                                    </h6>
                                 </span>
                             </li>
                             <li className="flex flex-row gap-4">
-                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#24292d] flex items-center justify-center">
+                                <div className="w-10 h-10 neo-brutalist bg-[#24292d] flex items-center justify-center">
                                     <i className="bi bi-github text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h4>
+                                    <h6 className="break-all text-xs">
                                         github.com/denverdelamasa
-                                    </h4>
+                                    </h6>
                                 </span>
                             </li>
                             <li className="flex flex-row gap-4">
-                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#0072b1] flex items-center justify-center">
+                                <div className="w-10 h-10 neo-brutalist bg-[#0072b1] flex items-center justify-center">
                                     <i className="bi bi-linkedin text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h4>
+                                    <h6 className="break-all text-xs">
                                         linkedin.com/in/denverdelamasa
-                                    </h4>
+                                    </h6>
                                 </span>
                             </li>
                             <li className="flex flex-row gap-4">
-                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-linear-to-bl from-[#405DE6] to-[#F77737] flex items-center justify-center">
+                                <div className="w-10 h-10 neo-brutalist bg-linear-to-bl from-[#405DE6] to-[#F77737] flex items-center justify-center">
                                     <i className="bi bi-instagram text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h4>
+                                    <h6 className="break-all text-xs">
                                         instagram.com/wanedanvers
-                                    </h4>
+                                    </h6>
                                 </span>
                             </li>
                             <li className="flex flex-row gap-4">
-                                <div className="w-[6vh] h-[6vh] neo-brutalist bg-[#1877F2] flex items-center justify-center">
+                                <div className="w-10 h-10 neo-brutalist bg-[#1877F2] flex items-center justify-center">
                                     <i className="bi bi-facebook text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h4>
+                                    <h6 className="break-all text-xs">
                                         facebook.com/wndnvrs
-                                    </h4>
+                                    </h6>
                                 </span>
                             </li>
                         </ul>
