@@ -2,6 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './styles/globals.css';
 import './styles/footer-grid.css';
+import './styles/aside-pattern.css';
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

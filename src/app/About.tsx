@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-        <div className="hero-content flex flex-col text-black w-auto h-full md:justify-start md:items-start my-12">
-            <div className="flex flex-row">
+        <div className="flex flex-col text-black w-auto h-full justify-start md:items-start my-12 mx-4">
+            <div className="flex flex-row mb-2">
                 <div className="my-auto w-[8vh] h-[8vh] m-4 neo-brutalist  flex items-center justify-center">
                     <i className="bi bi-info-circle text-black text-[5vh]"></i>
                 </div>
@@ -13,7 +13,7 @@ export default function About() {
                 </h1>
             </div>
             <div className="flex flex-col md:flex-row w-full h-full gap-4">
-                <div className="neo-brutalist w-full md:w-4/6 h-auto bg-white">
+                <div className="neo-brutalist w-full md:w-4/6 h-fit bg-white">
                     <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Bio</h2>
@@ -37,7 +37,7 @@ export default function About() {
                         </p>
                     </div>
                 </div>
-                <div className="neo-brutalist w-full md:w-2/6 h-auto bg-white flex flex-col">
+                <div className="neo-brutalist w-full md:w-2/6 h-fit bg-white flex flex-col">
                     <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Socials</h2>

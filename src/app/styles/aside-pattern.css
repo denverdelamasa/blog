@@ -1,0 +1,15 @@
+.aside-pattern {
+    background-image: repeating-linear-gradient(45deg, #000000 0, #000000 1px, transparent 0, transparent 50%);
+    background-size: 61px 61px;
+    background-color: #ffffff;
+    animation: patternMove 3s linear infinite;
+}
+
+@keyframes patternMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 61px; /* Move downward by one tile height */
+    }
+}
