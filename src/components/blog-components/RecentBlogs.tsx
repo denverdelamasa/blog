@@ -13,7 +13,7 @@ export default async function RecentBlogs() {
                 <div className="my-auto w-[8vh] h-[8vh] neo-brutalist bg-white flex items-center justify-center">
                     <i className="bi bi-envelope-at text-black text-[5vh]"></i>
                 </div>
-                <h1 className="text-black text-6xl">
+                <h1 className="text-black text-4xl md:text-6xl my-auto">
                     Recent Post
                 </h1>
             </div>

@@ -20,7 +20,7 @@ export default async function PopularBlogs() {
           <div className="my-auto w-[8vh] h-[8vh] neo-brutalist bg-[#1971c2] flex items-center justify-center">
             <i className="bi bi-fire text-white text-[5vh]"></i>
           </div>
-          <h1 className="text-white text-6xl">
+          <h1 className="text-white text-4xl md:text-6xl my-auto">
             Popular Posts
           </h1>
         </div>
