@@ -6,21 +6,31 @@ import About from "./About";
 export default function Home() {
   return (
     <>
-      <main className="min-h-[88vh] flex flex-col gap-4 my-4">
-        <section className="hero flex flex-col md:flex-row gap-8 grainy-bg h-auto border-2 border-gray-300 rounded-[8px]">
-          <section className="flex">
+      <main className="flex flex-col gap-8 my-8">
+        <section className="hero flex flex-row gap-4 items-stretch">
+          <aside className="neo-brutalist aside-pattern hidden md:block w-32"></aside>
+          <div className="flex grainy-bg border-2 border-gray-300 rounded-[8px]">
             <HomepageHero/>
-          </section>
+          </div>
         </section>
-        <section className="flex flex-col gap-2">
-          <div className="flex flex-row h-auto bg-purple-700 rounded-[8px]">
-            <PopularBlogs/>
+        <section className="flex flex-col gap-8">
+          <div className="flex flex-row h-auto gap-4">
+            <div className="bg-purple-700 rounded-[8px] w-9/10">
+              <PopularBlogs/>
+            </div>
+            <aside className="neo-brutalist aside-pattern hidden md:block m-2 w-1/10"></aside>
           </div>
-          <div className="flex flex-row h-auto grainy-bg bg-white border-2 border-gray-300 rounded-[8px]">
-            <RecentBlogs/>
+          <div className="flex flex-row h-auto gap-4">
+            <aside className="neo-brutalist aside-pattern hidden md:block w-1/10"></aside>
+            <div className="grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-9/10">
+              <RecentBlogs/>
+            </div>
           </div>
-          <div id="about" className="flex flex-row h-auto bg-orange-400 rounded-[8px] justify-between w-full">
-            <About/>
+          <div id="about" className="flex flex-row h-auto gap-4">
+            <div className="flex bg-orange-400 rounded-[8px] justify-between w-9/10">
+              <About/>
+            </div>
+            <aside className="neo-brutalist aside-pattern hidden md:block w-1/10"></aside>
           </div>
         </section>
       </main>
