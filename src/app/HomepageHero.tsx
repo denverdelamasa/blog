@@ -13,7 +13,7 @@ export default function HomepageHero() {
                     ● a place where I jot stuff down.
                 </p>
             </div>
-            <div className="bg-white neo-brutalist w-full min-h-[300px] max-h-[600px] flex flex-col">
+            <div className="bg-white neo-brutalist w-full flex flex-col">
                 <div className="w-full h-16 bg-[#e9ecef] border-black border-b-4 flex">
                     <span className="flex w-full justify-end mx-4 my-auto h-auto">
                         <Link href="https://app.spline.design/file/231390a6-afb6-47eb-b015-b4914e1bdc0f" target="_blank">
@@ -23,7 +23,9 @@ export default function HomepageHero() {
                         </Link>
                     </span>
                 </div>
-                <Spline3D/>
+                <div className="min-h-[250px] max-h-[250px] md:max-h-[600px] ">
+                    <Spline3D/>
+                </div>
             </div>
         </div>
     </>
