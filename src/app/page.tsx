@@ -7,22 +7,21 @@ export default function Home() {
   return (
     <>
       <main className="min-h-[88vh] flex flex-col gap-4 my-4">
-        <section className="hero min-h-[70vh] md:min-h-[88vh] border-2 border-gray-300 rounded-[8px]">
-          <HomepageHero/>
-        </section>
-        <section className="flex flex-col md:flex-row gap-2">
-          <section className="flex flex-col w-full md:w-7/8 gap-4">
-            <section className="min-h-[100vh] bg-purple-700 rounded-[8px]">
-              <PopularBlogs/>
-            </section>
-            <section className="h-auto bg-white border-2 border-gray-300 rounded-[8px]">
-              <RecentBlogs/>
-            </section>
-            <section id="about" className="h-auto bg-orange-400 rounded-[8px]">
-              <About/>
-            </section>
+        <section className="hero flex flex-col md:flex-row gap-8 grainy-bg h-auto border-2 border-gray-300 rounded-[8px]">
+          <section className="flex">
+            <HomepageHero/>
           </section>
-          <aside className="neo-brutalist aside-pattern hidden md:block w-full md:w-1/8"></aside>
+        </section>
+        <section className="flex flex-col gap-2">
+          <div className="flex flex-row h-auto bg-purple-700 rounded-[8px]">
+            <PopularBlogs/>
+          </div>
+          <div className="flex flex-row h-auto grainy-bg bg-white border-2 border-gray-300 rounded-[8px]">
+            <RecentBlogs/>
+          </div>
+          <div id="about" className="flex flex-row h-auto bg-orange-400 rounded-[8px] justify-between w-full">
+            <About/>
+          </div>
         </section>
       </main>
     </>

@@ -13,7 +13,7 @@ export default function About() {
                 </h1>
             </div>
             <div className="flex flex-col md:flex-row w-full h-full gap-4">
-                <div className="neo-brutalist w-full md:w-6/10 h-fit bg-white">
+                <div className="neo-brutalist w-full md:w-6/11 h-fit bg-white">
                     <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Bio</h2>
@@ -29,15 +29,16 @@ export default function About() {
                         <p className="text-sm mt-2 max-w-prose">
                             I like Illustrating, designing, creating, and fixing stuff. I guess being 
                             a creative at heart is why I naturally leaned into web design.
+                            When I'm not coding, I do art, play games, listen to music and just chill with my 
+                            cat as we watch the sunset.
                         </p>
-                        <p className="text-sm mt-2 max-w-prose">
-                            When I’m not coding, I’m usually sketching characters or sitting outside 
-                            with my cat, listening to music and watching the sunset. I also play guitar, 
-                            bass, and drums — and I can sing decently, thanks to the church I grew up with.  
+                        <p className="text-sm mt-2 max-w-prose">  
+                            This blog is a personal project where I share my experiences, things I do, or whatever... 
+                            but in truth, I just wanted a reason to make a neo-brutalist theme website xD!
                         </p>
                     </div>
                 </div>
-                <div className="neo-brutalist w-full md:w-4/10 h-fit bg-white flex flex-col">
+                <div className="neo-brutalist w-full md:w-5/11 h-fit bg-white flex flex-col">
                     <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Socials</h2>
@@ -50,7 +51,7 @@ export default function About() {
                                     <i className="bi bi-envelope-at text-black text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs md:text-xl">
+                                    <h6 className="break-all text-xs md:text-lg">
                                         denver.delamasa@gmail.com
                                     </h6>
                                 </span>
@@ -60,7 +61,7 @@ export default function About() {
                                     <i className="bi bi-github text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs md:text-xl">
+                                    <h6 className="break-all text-xs md:text-lg">
                                         github.com/denverdelamasa
                                     </h6>
                                 </span>
@@ -70,7 +71,7 @@ export default function About() {
                                     <i className="bi bi-linkedin text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs md:text-xl">
+                                    <h6 className="break-all text-xs md:text-lg">
                                         linkedin.com/in/denverdelamasa
                                     </h6>
                                 </span>
@@ -80,7 +81,7 @@ export default function About() {
                                     <i className="bi bi-instagram text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs md:text-xl">
+                                    <h6 className="break-all text-xs md:text-lg">
                                         instagram.com/wanedanvers
                                     </h6>
                                 </span>
@@ -90,7 +91,7 @@ export default function About() {
                                     <i className="bi bi-facebook text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs md:text-xl">
+                                    <h6 className="break-all text-xs md:text-lg">
                                         facebook.com/wndnvrs
                                     </h6>
                                 </span>
