@@ -7,7 +7,7 @@ import './styles/aside-pattern.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-
+import AppLoaderWrapper from "@/components/AppLoaderWrapper";
 
 import { Ubuntu } from 'next/font/google';
 
@@ -27,11 +27,13 @@ export default function RootLayout({
       <body
         className={`${ubuntu.className}, bg-white`}
       >
-      <Navbar/>
-      <div className="mx-2">
-        {children}
-      </div>
-      <Footer/>
+        <AppLoaderWrapper>
+          <Navbar/>
+            <div className="mx-2">
+                {children}
+            </div>
+          <Footer/>
+        </AppLoaderWrapper>
       </body>
     </html>
   );
