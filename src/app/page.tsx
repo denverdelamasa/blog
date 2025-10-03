@@ -12,13 +12,13 @@ export default function Home() {
         </section>
         <section className="flex flex-col md:flex-row gap-2">
           <section className="flex flex-col w-full md:w-7/8 gap-4">
-            <section className="min-h-[100vh] bg-[#1971c2] rounded-[8px]">
+            <section className="min-h-[100vh] bg-purple-700 rounded-[8px]">
               <PopularBlogs/>
             </section>
             <section className="h-auto bg-white border-2 border-gray-300 rounded-[8px]">
               <RecentBlogs/>
             </section>
-            <section id="about" className="h-auto bg-[#ffd43b] rounded-[8px]">
+            <section id="about" className="h-auto bg-orange-400 rounded-[8px]">
               <About/>
             </section>
           </section>

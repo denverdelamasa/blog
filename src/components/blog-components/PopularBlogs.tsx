@@ -17,7 +17,7 @@ export default async function PopularBlogs() {
     <div className="flex flex-col my-12 mx-4 align-middle">
       <div className="text-end mb-4">
         <div className="flex flex-row align-middle gap-4">
-          <div className="my-auto w-[8vh] h-[8vh] neo-brutalist bg-[#1971c2] flex items-center justify-center">
+          <div className="my-auto w-[8vh] h-[8vh] neo-brutalist bg-purple-700 flex items-center justify-center">
             <i className="bi bi-fire text-white text-[5vh]"></i>
           </div>
           <h1 className="text-white text-4xl md:text-6xl my-auto">
@@ -49,7 +49,7 @@ export default async function PopularBlogs() {
             </div>
             <Link
               href={`/blog/${post.slug}`}
-              className="m-4 neo-brutalist bg-[#ffd43b] px-4 py-2 text-black w-fit"
+              className="m-4 neo-brutalist bg-orange-400 px-4 py-2 text-white w-fit"
             >
               Read <i className="bi bi-arrow-right"></i>
             </Link>
@@ -59,7 +59,7 @@ export default async function PopularBlogs() {
       <div className="flex my-4 justify-end">
         <Link
           href={`/blog`}
-          className="neo-brutalist bg-[#ffd43b] px-4 py-2 text-black w-fit"
+          className="neo-brutalist bg-orange-400 px-4 py-2 text-white w-fit"
         >
           <i className="bi bi-newspaper mr-2"></i>
           View More

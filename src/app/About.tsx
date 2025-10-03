@@ -6,14 +6,14 @@ export default function About() {
         <div className="flex flex-col text-black w-auto h-full justify-start md:items-start my-12 mx-4">
             <div className="flex flex-row mb-4">
                 <div className="my-auto w-[8vh] h-[8vh] m-4 neo-brutalist  flex items-center justify-center">
-                    <i className="bi bi-info-circle text-black text-[5vh]"></i>
+                    <i className="bi bi-info-circle text-white text-[5vh]"></i>
                 </div>
-                <h1 className="text-5xl md:text-6xl text-wrap my-auto">
+                <h1 className="text-white text-5xl md:text-6xl text-wrap my-auto">
                     About
                 </h1>
             </div>
             <div className="flex flex-col md:flex-row w-full h-full gap-4">
-                <div className="neo-brutalist w-full md:w-4/6 h-fit bg-white">
+                <div className="neo-brutalist w-full md:w-6/10 h-fit bg-white">
                     <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Bio</h2>
@@ -37,7 +37,7 @@ export default function About() {
                         </p>
                     </div>
                 </div>
-                <div className="neo-brutalist w-full md:w-2/6 h-fit bg-white flex flex-col">
+                <div className="neo-brutalist w-full md:w-4/10 h-fit bg-white flex flex-col">
                     <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Socials</h2>
@@ -50,7 +50,7 @@ export default function About() {
                                     <i className="bi bi-envelope-at text-black text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs">
+                                    <h6 className="break-all text-xs md:text-xl">
                                         denver.delamasa@gmail.com
                                     </h6>
                                 </span>
@@ -60,7 +60,7 @@ export default function About() {
                                     <i className="bi bi-github text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs">
+                                    <h6 className="break-all text-xs md:text-xl">
                                         github.com/denverdelamasa
                                     </h6>
                                 </span>
@@ -70,7 +70,7 @@ export default function About() {
                                     <i className="bi bi-linkedin text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs">
+                                    <h6 className="break-all text-xs md:text-xl">
                                         linkedin.com/in/denverdelamasa
                                     </h6>
                                 </span>
@@ -80,7 +80,7 @@ export default function About() {
                                     <i className="bi bi-instagram text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs">
+                                    <h6 className="break-all text-xs md:text-xl">
                                         instagram.com/wanedanvers
                                     </h6>
                                 </span>
@@ -90,7 +90,7 @@ export default function About() {
                                     <i className="bi bi-facebook text-white text-[3vh]"></i>
                                 </div>
                                 <span className="my-auto">
-                                    <h6 className="break-all text-xs">
+                                    <h6 className="break-all text-xs md:text-xl">
                                         facebook.com/wndnvrs
                                     </h6>
                                 </span>

@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`flex flex-col m-2 rounded-[4px] border-4 border-[#202020] bg-[#ffd43b] md:h-[14vh] ${isExpanded ? 'h-auto' : 'h-[16h]'} transition-all duration-500 ease-in-out overflow-hidden`}>
+    <nav className={`flex flex-col m-2 rounded-[4px] border-4 border-[#202020] bg-orange-400 md:h-[14vh] ${isExpanded ? 'h-auto' : 'h-[16h]'} transition-all duration-500 ease-in-out overflow-hidden`}>
       <div className="flex flex-row w-full md:h-full h-[12vh]">
         <div className="navbar-start">
           <Link href="https://denverdelamasa.vercel.app" target="_blank">
@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <div className="navbar-center hidden md:flex flex-row gap-8">
           <Link href="/">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
+            <div className="bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -33,7 +33,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/blog">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
+            <div className="bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -41,7 +41,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/#about">
-            <div className="bg-[#ffd43b] neo-brutalist py-2 px-4 text-black hover:text-white">
+            <div className="bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
@@ -60,7 +60,7 @@ export default function Navbar() {
           </div>
           
           <button 
-            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#ffd43b] flex items-center justify-center transition-all ease-out duration-300"
+            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-orange-400 flex items-center justify-center transition-all ease-out duration-300"
             onClick={toggleNavbar}
             aria-label="Toggle menu"
           >
@@ -76,7 +76,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform">
+            <div className="bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -88,7 +88,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform">
+            <div className="bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -100,7 +100,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-[#ffd43b] neo-brutalist py-3 mx-4 text-black hover:text-white transform">
+            <div className="bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
