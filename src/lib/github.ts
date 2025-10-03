@@ -51,8 +51,6 @@ async function fetchDiscussions(slugs: string[], posts: PostMeta[]) {
     };
   };
   const discussions = data.repository.discussions.nodes;
-  console.log("Fetched discussions:", discussions);
-
   const engagement: Record<string, number> = {};
 
   for (const slug of slugs) {
@@ -81,8 +79,6 @@ async function fetchDiscussions(slugs: string[], posts: PostMeta[]) {
 export async function getPopularPosts(posts: PostMeta[], topN = 3): Promise<string[]> {
   const slugs = posts.map(p => p.slug);
   const engagement = await fetchDiscussions(slugs, posts);
-
-  console.log("Engagement scores:", engagement);
 
   // Sort slugs by engagement score, descending
   return Object.entries(engagement)
