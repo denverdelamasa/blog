@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`flex flex-col m-2 bg-[#ffd43b] neo-brutalist md:h-[14vh] ${isExpanded ? 'h-auto' : 'h-[16h]'} transition-all duration-500 ease-in-out overflow-hidden`}>
+    <nav className={`flex flex-col m-2 rounded-[4px] border-4 border-[#202020] bg-[#ffd43b] md:h-[14vh] ${isExpanded ? 'h-auto' : 'h-[16h]'} transition-all duration-500 ease-in-out overflow-hidden`}>
       <div className="flex flex-row w-full md:h-full h-[12vh]">
         <div className="navbar-start">
           <Link href="https://denverdelamasa.vercel.app" target="_blank">
