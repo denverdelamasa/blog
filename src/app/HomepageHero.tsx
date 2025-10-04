@@ -1,16 +1,12 @@
-'use client'
-
 import Link from "next/link";
-import dynamic from "next/dynamic";
-
-const Spline3D = dynamic(() => import("@/components/Spline3D"), { ssr: false });
+import Spline3D from "@/components/Spline3D";
 
 export default function HomepageHero() {
   return (
     <>
-        <div className="hero-content flex flex-col lg:flex-row justify-evenly text-black w-full h-full m-4 py-8">
+        <div className="hero-content flex flex-col lg:flex-row justify-evenly text-black w-full h-full m-4">
             <div className="flex flex-col gap-2">
-                <h1 className="text-5xl md:text-8xl break-words md:break-normal">
+                <h1 className="text-6xl md:text-8xl break-all md:break-normal">
                     Welcome to my Blog!
                 </h1>
                 <p className="text-md md:text-xl">
@@ -28,7 +24,7 @@ export default function HomepageHero() {
                     </span>
                 </div>
                 <div className="min-h-[250px] max-h-[250px] md:max-h-[600px] ">
-                    <Spline3D />
+                    <Spline3D/>
                 </div>
             </div>
         </div>

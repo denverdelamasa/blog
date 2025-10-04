@@ -50,6 +50,17 @@ async function fetchDiscussions(slugs: string[], posts: PostMeta[]) {
       };
     };
   };
+
+  type DiscussionNode = {
+    title: string;
+    number: number;
+    comments: { totalCount: number };
+    reactionGroups: Array<{
+      content: string;
+      users: { totalCount: number };
+    }>;
+  };
+
   const discussions = data.repository.discussions.nodes;
   const engagement: Record<string, number> = {};
 
@@ -59,11 +70,12 @@ async function fetchDiscussions(slugs: string[], posts: PostMeta[]) {
       engagement[slug] = 0;
       continue;
     }
-    // Match by slug instead of title if your discussion titles are slugs
-      const discussion = discussions.find((d: any) => d.title === `blog/${slug}`);    if (discussion) {
+    // Use the typed DiscussionNode instead of any
+    const discussion = discussions.find((d) => d.title === `blog/${slug}`);
+    if (discussion) {
       const commentCount = discussion.comments.totalCount;
       const reactionCount = discussion.reactionGroups.reduce(
-        (sum: number, group: any) => sum + group.users.totalCount,
+        (sum, group) => sum + group.users.totalCount,
         0
       );
       engagement[slug] = commentCount + reactionCount;

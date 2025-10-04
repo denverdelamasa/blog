@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -16,9 +17,7 @@ export default function Navbar() {
         <div className="navbar-start">
           <Link href="https://denverdelamasa.vercel.app" target="_blank">
             <div className="avatar">
-              <div className="w-[8vh] m-4 rounded-full neo-brutalist">
-                <img alt="avatar" src="/avatar.png" />
-              </div>
+              <Image alt="avatar" src="/avatar.png" width={42} height={42} className="m-4 rounded-full neo-brutalist" />
             </div>
           </Link>
         </div>

@@ -29,7 +29,7 @@ export default function About() {
                         <p className="text-sm mt-2 max-w-prose">
                             I like Illustrating, designing, creating, and fixing stuff. I guess being 
                             a creative at heart is why I naturally leaned into web design.
-                            When I'm not coding, I do art, play games, listen to music and just chill with my 
+                            When I&apos;m not coding, I do art, play games, listen to music and just chill with my 
                             cat as we watch the sunset.
                         </p>
                         <p className="text-sm mt-2 max-w-prose">  
