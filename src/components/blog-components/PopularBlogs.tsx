@@ -25,7 +25,7 @@ export default async function PopularBlogs() {
           </h1>
         </div>
       </div>
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {popularPosts.map((post, idx) => (
           <div
             key={post.slug}
