@@ -9,12 +9,18 @@ import Footer from "@/components/Footer";
 
 import AppLoaderWrapper from "@/components/AppLoaderWrapper";
 
-import { Ubuntu } from 'next/font/google';
+import { Ubuntu, Cal_Sans } from 'next/font/google';
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-ubuntu',
+});
+
+const calSans = Cal_Sans({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-cal-sans',
 });
 
 export default function RootLayout({
@@ -24,9 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${ubuntu.className}, bg-white`}
-      >
+      <body className={`${ubuntu.variable} ${calSans.variable} bg-white`}>
         <AppLoaderWrapper>
           <Navbar/>
             <div className="mx-2">

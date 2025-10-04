@@ -1,6 +1,6 @@
-import Spline from '@splinetool/react-spline/next';
+import Spline from '@splinetool/react-spline';
 
-export default function Home() {
+export default function Spline3D() {
   return (
     <div className="h-full w-full">
       <Spline
