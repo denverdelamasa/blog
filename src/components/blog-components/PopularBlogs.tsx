@@ -34,7 +34,7 @@ export default async function PopularBlogs() {
             <div>
               <div className="flex justify-end h-16 bg-[#e9ecef] mb-2 px-4 border-b-4 border-black">
                 {idx === 0 && (
-                    <span className="neo-brutalist inline-block bg-red-500 text-white text-sm font-bold py-1 px-3 my-auto">
+                    <span className="neo-brutalist inline-block hover:bg-red-600 bg-red-500 text-white text-sm font-bold py-1 px-3 my-auto">
                         <i className="bi bi-fire text-white my-auto mr-1"></i>
                         Hot!
                     </span>
@@ -50,7 +50,7 @@ export default async function PopularBlogs() {
             </div>
             <Link
               href={`/blog/${post.slug}`}
-              className="m-4 neo-brutalist bg-orange-400 px-4 py-2 text-white w-fit"
+              className="m-4 neo-brutalist hover:bg-orange-500 bg-orange-400 px-4 py-2 text-white w-fit"
             >
               Read <i className="bi bi-arrow-right"></i>
             </Link>
@@ -60,7 +60,7 @@ export default async function PopularBlogs() {
       <div className="flex my-4 justify-end">
         <Link
           href={`/blog`}
-          className="neo-brutalist bg-orange-400 px-4 py-2 text-white w-fit"
+          className="neo-brutalist hover:bg-orange-500 bg-orange-400 px-4 py-2 text-white w-fit"
         >
           <i className="bi bi-newspaper mr-2"></i>
           View More

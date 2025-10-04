@@ -37,7 +37,7 @@ export default async function RecentBlogs() {
                 </div>
                 <Link
                     href={`/blog/${post.slug}`}
-                    className="m-4 neo-brutalist bg-orange-400 px-4 py-2 text-white w-fit"
+                    className="m-4 neo-brutalist hover:bg-orange-500 bg-orange-400 px-4 py-2 text-white w-fit"
                 >
                     Read <i className="bi bi-arrow-right"></i>
                 </Link>
@@ -47,7 +47,7 @@ export default async function RecentBlogs() {
         <div className="flex my-4 justify-end">
             <Link
                 href={`/blog`}
-                className="neo-brutalist bg-orange-400 px-4 py-2 text-white w-fit"
+                className="neo-brutalist hover:bg-orange-500 bg-orange-400 px-4 py-2 text-white w-fit"
             >
                 <i className="bi bi-newspaper mr-2"></i>
                 View More

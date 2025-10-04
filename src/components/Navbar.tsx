@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <div className="navbar-center hidden md:flex flex-row gap-8">
           <Link href="/">
-            <div className="bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
+            <div className="hover:bg-orange-500 bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -33,7 +33,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/blog">
-            <div className="bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
+            <div className="hover:bg-orange-500 bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -41,7 +41,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link href="/#about">
-            <div className="bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
+            <div className="hover:bg-orange-500 bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
@@ -60,7 +60,7 @@ export default function Navbar() {
           </div>
           
           <button 
-            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist bg-orange-400 flex items-center justify-center transition-all ease-out duration-300"
+            className="md:hidden w-[8vh] h-[8vh] m-4 neo-brutalist hover:bg-orange-500 bg-orange-400 flex items-center justify-center transition-all ease-out duration-300"
             onClick={toggleNavbar}
             aria-label="Toggle menu"
           >
@@ -76,7 +76,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
+            <div className="hover:bg-orange-500 bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
               <span className="text-xl">
                 <i className="bi bi-house mr-2 my-auto"></i>
                 Home
@@ -88,7 +88,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
+            <div className="hover:bg-orange-500 bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
               <span className="text-xl">
                 <i className="bi bi-newspaper mr-2 my-auto"></i>
                 Blog
@@ -100,7 +100,7 @@ export default function Navbar() {
             className="w-full text-center transition-transform duration-300"
             onClick={() => setIsExpanded(false)}
           >
-            <div className="bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
+            <div className="hover:bg-orange-500 bg-orange-400 neo-brutalist py-3 mx-4 text-white hover:text-black transform">
               <span className="text-xl">
                 <i className="bi bi-info-circle mr-2 my-auto"></i>
                 About
