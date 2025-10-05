@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next";
+
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import './styles/globals.css';
