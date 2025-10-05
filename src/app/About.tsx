@@ -48,7 +48,7 @@ export default function About() {
                         <ul className="flex flex-col m-0 gap-4">
                             <li className="flex flex-row gap-4">
                                 <Link href="mailto:denverdelamasa@gmail.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 neo-brutalist bg-white flex items-center justify-center">
-                                    <i className="bi bi-envelope-at text-black text-[3vh]"></i>
+                                    <i className="bi bi-envelope-at text-black text-[26px]"></i>
                                 </Link>
                                 <span className="my-auto">
                                     <h6 className="break-all text-xs md:text-lg">
@@ -58,7 +58,7 @@ export default function About() {
                             </li>
                             <li className="flex flex-row gap-4">
                                 <Link href="https://www.github.com/denverdelamasa" target="_blank" rel="noopener noreferrer" className="w-10 h-10 neo-brutalist bg-[#24292d] flex items-center justify-center">
-                                    <i className="bi bi-github text-white text-[3vh]"></i>
+                                    <i className="bi bi-github text-white text-[26px]"></i>
                                 </Link>
                                 <span className="my-auto">
                                     <h6 className="break-all text-xs md:text-lg">
@@ -68,7 +68,7 @@ export default function About() {
                             </li>
                             <li className="flex flex-row gap-4">
                                 <Link href="https://www.linkedin.com/in/denverdelamasa" target="_blank" rel="noopener noreferrer" className="w-10 h-10 neo-brutalist bg-[#0072b1] flex items-center justify-center">
-                                    <i className="bi bi-linkedin text-white text-[3vh]"></i>
+                                    <i className="bi bi-linkedin text-white text-[26px]"></i>
                                 </Link>
                                 <span className="my-auto">
                                     <h6 className="break-all text-xs md:text-lg">
@@ -78,7 +78,7 @@ export default function About() {
                             </li>
                             <li className="flex flex-row gap-4">
                                 <Link href="https://www.instagram.com/wanedanvers" target="_blank" rel="noopener noreferrer" className="w-10 h-10 neo-brutalist bg-linear-to-bl from-[#405DE6] to-[#F77737] flex items-center justify-center">
-                                    <i className="bi bi-instagram text-white text-[3vh]"></i>
+                                    <i className="bi bi-instagram text-white text-[26px]"></i>
                                 </Link>
                                 <span className="my-auto">
                                     <h6 className="break-all text-xs md:text-lg">
@@ -88,7 +88,7 @@ export default function About() {
                             </li>
                             <li className="flex flex-row gap-4">
                                 <Link href="https://www.facebook.com/wndnvrs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 neo-brutalist bg-[#1877F2] flex items-center justify-center">
-                                    <i className="bi bi-facebook text-white text-[3vh]"></i>
+                                    <i className="bi bi-facebook text-white text-[26px]"></i>
                                 </Link>
                                 <span className="my-auto">
                                     <h6 className="break-all text-xs md:text-lg">
