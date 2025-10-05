@@ -12,8 +12,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`flex flex-col m-2 rounded-[4px] border-4 border-[#202020] bg-orange-400 md:h-[14vh] ${isExpanded ? 'h-auto' : 'h-[16h]'} transition-all duration-500 ease-in-out overflow-hidden`}>
-      <div className="flex flex-row w-full md:h-full h-[12vh]">
+    <nav className={`flex flex-col m-2 rounded-[4px] border-4 border-[#202020] bg-orange-400 h-[84px] ${isExpanded ? 'h-auto' : 'h-[16h]'} transition-all duration-500 ease-in-out overflow-hidden`}>
+      <div className="flex flex-row w-full md:h-full">
         <div className="navbar-start">
           <Link href="https://denverdelamasa.vercel.app" target="_blank">
             <div className="avatar">
@@ -52,8 +52,8 @@ export default function Navbar() {
         <div className="navbar-end flex items-center">
           <div className={`${isExpanded ? 'hidden' : 'block'} md:block`}>
             <Link href="https://github.com/denverdelamasa/blog" target="_blank">
-              <div className="w-[8vh] h-[8vh] m-4 neo-brutalist bg-[#24292d] flex items-center justify-center">
-                <i className="bi bi-github text-white text-[5vh]"></i>
+              <div className="m-4 w-[52] h-[52] neo-brutalist bg-[#24292d] flex items-center justify-center">
+                <i className="bi bi-github text-white text-[3vh]"></i>
               </div>
             </Link>
           </div>
