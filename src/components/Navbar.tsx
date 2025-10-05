@@ -18,7 +18,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex flex-row gap-4 flex-1 justify-center">
+        <div className="hidden md:flex flex-row gap-4 flex-1 justify-center-safe">
           <NavLink href="/" icon="bi-house" label="Home" />
           <NavLink href="/blog" icon="bi-newspaper" label="Blog" />
           <NavLink href="/#about" icon="bi-info-circle" label="About" />
@@ -50,7 +50,7 @@ export default function Navbar() {
           isExpanded ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="flex flex-col items-center gap-2 pb-4">
+        <div className="flex flex-col items-end gap-2 pb-4">
           <NavLink href="/" icon="bi-house" label="Home" onClick={() => setIsExpanded(false)} />
           <NavLink href="/blog" icon="bi-newspaper" label="Blog" onClick={() => setIsExpanded(false)} />
           <NavLink href="/#about" icon="bi-info-circle" label="About" onClick={() => setIsExpanded(false)} />
@@ -63,7 +63,7 @@ export default function Navbar() {
 // Reusable NavLink component
 function NavLink({ href, icon, label, onClick }: { href: string, icon: string, label: string, onClick?: () => void }) {
   return (
-    <Link href={href} onClick={onClick} className="w-full text-center max-w-[200px]">
+    <Link href={href} onClick={onClick} className="w-fit text-center max-w-[200px]">
       <div className="hover:bg-orange-500 bg-orange-400 neo-brutalist py-2 px-4 text-white hover:text-black flex items-center justify-center gap-2 transition-all duration-300 mx-2">
         <i className={`bi ${icon}`}></i>
         <span className="text-lg">{label}</span>
