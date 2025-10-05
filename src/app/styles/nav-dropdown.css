@@ -1,0 +1,15 @@
+/* Add to your CSS (or Tailwind config) */
+.nav-dropdown {
+  transform-origin: top;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+}
+.nav-dropdown.closed {
+  transform: scaleY(0);
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-dropdown.open {
+  transform: scaleY(1);
+  opacity: 1;
+  pointer-events: auto;
+}
