@@ -8,7 +8,7 @@ export default function About() {
                 <div className="my-auto w-[8vh] h-[8vh] m-4 neo-brutalist  flex items-center justify-center">
                     <i className="bi bi-info-circle text-white text-[5vh]"></i>
                 </div>
-                <h1 className="text-white text-5xl md:text-6xl text-wrap my-auto">
+                <h1 className="text-white text-6xl text-wrap my-auto">
                     About
                 </h1>
             </div>
