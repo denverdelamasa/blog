@@ -26,6 +26,13 @@ const outfit = Outfit({
   variable: '--font-outfit',
 });
 
+export const metadata = {
+  title: "The incredibly awesome blog of Wyane",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
