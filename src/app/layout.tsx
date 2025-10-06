@@ -27,7 +27,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "The incredibly awesome blog of Wyane",
+  title: "My incredible awsome sauce Blog where I upload my awesome sauce articles, tutorials, projects, or whatever else I feel like sharing or idk",
   icons: {
     icon: "/favicon.ico",
   },
