@@ -30,7 +30,7 @@ export default async function PostPage(props: Params) {
 
           {/* Giscus live comment box (client component) */}
           <div className="flex flex-col mt-12 neo-brutalist">
-            <div className="flex flex-row gap-2 align-middle justify-start items-center p-4 w-full bg-[#e9ecef] border-b-4 border-black">
+            <div className="flex flex-row gap-2 align-middle justify-start items-center p-4 w-full bg-gray-200 border-b-4 border-black">
               <i className="bi bi-chat-right-text text-black text-3xl"></i>
               <h2 className="text-black text-4xl">
                 Comments

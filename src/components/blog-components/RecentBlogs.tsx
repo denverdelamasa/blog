@@ -25,7 +25,7 @@ export default async function RecentBlogs() {
                 className="neo-brutalist flex flex-col justify-between bg-white"
             >
                 <div>
-                    <div className="flex h-16 bg-[#e9ecef] mb-2 px-4 border-b-4 border-black">
+                    <div className="flex h-16 bg-gray-200 mb-2 px-4 border-b-4 border-black">
                     </div>
                     <div className="p-4">
                         <h3 className="text-black text-2xl font-semibold mb-2">{post.title}</h3>

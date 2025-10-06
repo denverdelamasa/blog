@@ -14,7 +14,7 @@ export default function About() {
             </div>
             <div className="flex flex-col md:flex-row w-full h-full gap-4">
                 <div className="neo-brutalist w-full md:w-6/11 h-fit bg-white">
-                    <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
+                    <div className="w-full h-18 bg-gray-200 border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Bio</h2>
                         </span>
@@ -39,7 +39,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="neo-brutalist w-full md:w-5/11 h-fit bg-white flex flex-col">
-                    <div className="w-full h-18 bg-[#e9ecef] border-black border-b-4 flex">
+                    <div className="w-full h-18 bg-gray-200 border-black border-b-4 flex">
                         <span className="w-full text-start mx-4 my-auto h-auto">
                             <h2 className="text-2xl">Socials</h2>
                         </span>

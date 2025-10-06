@@ -13,8 +13,8 @@ export default function HomepageHero() {
                     ● a place where I jot stuff down.
                 </p>
             </div>
-            <div className="bg-white neo-brutalist w-full flex flex-col">
-                <div className="w-full h-16 bg-[#e9ecef] border-black border-b-4 flex">
+            <div className="bg-white neo-brutalist w-full flex flex-col mb-8">
+                <div className="w-full h-16 bg-gray-200 border-black border-b-4 flex">
                     <span className="flex w-full justify-end mx-4 my-auto h-auto">
                         <Link href="https://app.spline.design/file/231390a6-afb6-47eb-b015-b4914e1bdc0f" target="_blank">
                             <div className="neo-brutalist w-fit bg-green-400">
