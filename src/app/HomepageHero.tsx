@@ -6,7 +6,7 @@ export default function HomepageHero() {
     <>
         <div className="hero-content flex flex-col lg:flex-row justify-evenly text-black w-full h-full m-4">
             <div className="flex flex-col gap-2">
-                <h1 className="text-5xl md:text-7xl break-all md:break-normal">
+                <h1 className="text-5xl md:text-7xl break-normal">
                     Welcome to my Blog!
                 </h1>
                 <p className="text-sm md:text-xl text-gray-600">
