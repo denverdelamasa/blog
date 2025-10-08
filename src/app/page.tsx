@@ -1,6 +1,6 @@
 import HomepageHero from "./HomepageHero";
-import PopularBlogs from "@/components/blog-components/PopularBlogs"
-import RecentBlogs from "@/components/blog-components/RecentBlogs";
+import PopularBlogs from "@/components/blog-components/HomePopularBlogs"
+import RecentBlogs from "@/components/blog-components/HomeRecentBlogs";
 import About from "./About";
 
 export default function Home() {

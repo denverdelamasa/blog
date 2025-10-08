@@ -1,8 +1,8 @@
 import { getAllSlugs, getPostBySlug } from '@/lib/posts'
 import React from 'react'
 import GiscusComments from '@/components/blog-components/GiscusComments'
-import RecentBlogs from '@/components/blog-components/RecentBlogs'
-import PopularBlogs from '@/components/blog-components/PopularBlogs'
+import RecentBlogs from '@/components/blog-components/HomeRecentBlogs'
+import PopularBlogs from '@/components/blog-components/HomePopularBlogs'
 
 type Params = { params: Promise<{ slug: string }> }
 
