@@ -2,6 +2,11 @@
 
 import { useState } from "react";
 
+import Featured from "@/app/blog/Featured";
+import Popular from "@/app/blog/Popular";
+import Recent from "@/app/blog/Recent";
+
+
 export default function Blog() {
   const [activeSection, setActiveSection] = useState("popular");
 
@@ -17,10 +22,7 @@ export default function Blog() {
     <>
       <main className="hero flex flex-col gap-8 my-8 text-black">
         <section className="hero-content gap-4 items-start w-full">
-          <div className="flex border-2 border-gray-300 rounded-[8px] w-full min-h-[60vh] p-4">
-          <h1 className="text-5xl md:text-7xl break-normal">Featured Blogs</h1>
-          
-          </div>
+          <Featured />
         </section>
 
         <section className="hero-content flex flex-col gap-8 w-full justify-left items-start ">
@@ -48,17 +50,19 @@ export default function Blog() {
 
         <section className="hero-content flex flex-col gap-8 w-full">
           <div className={`flex flex-col gap-8 w-full ${activeSection === "recent" ? "hidden" : ""}`}>
-            <div className="text-white bg-purple-700 rounded-[8px] w-full min-h-[50vh]">
-            this is popular blog
-            </div>
+            <Popular />
           </div>
           <div className={`flex flex-col gap-8 w-full ${activeSection === "popular" ? "hidden" : ""}`}>
-            <div className="grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-full min-h-[50vh]">
-            this is recent blog
-            </div>
+            <Recent />
           </div>
         </section>
       </main>
+      <style jsx>{`
+        .active {
+          background-color: #3f3f3f36;
+          color: #000;
+        }
+      `}</style>
     </>
   );
 }
