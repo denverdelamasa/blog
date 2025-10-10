@@ -15,14 +15,12 @@ export default function Home() {
         </section>
         <section className="hero-content flex flex-col gap-8">
           <div className="flex flex-row h-auto gap-4">
-            <div className="bg-purple-700 rounded-[8px] w-full md:w-9/10">
+            <div className="bg-purple-700 rounded-[8px] w-full">
               <PopularBlogs/>
             </div>
-            <aside className="neo-brutalist aside-pattern hidden md:block m-2 w-1/10"></aside>
           </div>
           <div className="flex flex-row h-auto gap-4">
-            <aside className="neo-brutalist aside-pattern hidden md:block w-1/10"></aside>
-            <div className="grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-full md:w-9/10">
+            <div className="grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-full">
               <RecentBlogs/>
             </div>
           </div>
