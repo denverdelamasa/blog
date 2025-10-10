@@ -2,7 +2,7 @@
 title: "test"
 slug: "test"
 date: "2025-09-30"
-excerpt: "idk what excerpt means. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+excerpt: "This post should be hidden initially. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 tags: ["test", "phone", "idk", "tags"]
 ---
 
