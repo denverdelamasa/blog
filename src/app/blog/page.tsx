@@ -1,8 +1,11 @@
-import Featured from "@/app/blog/content/Featured";
-import PopularBlogPage from "@/app/blog/content/Popular";
-import RecentBlogPage from "@/app/blog/content/Recent";
+import { getAllPosts, PostMeta } from "@/lib/posts";
+import Featured from "@/app/blog/content/FeaturedBlogPage";
+import PopularBlogPage from "@/app/blog/content/PopularBlogPage";
+import RecentBlogPage from "@/app/blog/content/RecentBlogPage";
 
-export default function Blog() {
+export default async function Blog() {
+  const posts: PostMeta[] = await getAllPosts();
+
   return (
     <>
       <main className="hero flex flex-col gap-8 my-8 text-black">
@@ -15,7 +18,7 @@ export default function Blog() {
             <PopularBlogPage />
           </div>
           <div className="flex flex-col gap-8 grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-full">
-            <RecentBlogPage />
+            <RecentBlogPage posts={posts} />
           </div>
         </section>
       </main>

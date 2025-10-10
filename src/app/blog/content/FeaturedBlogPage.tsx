@@ -1,4 +1,4 @@
-export default function Featured() {
+export default function FeaturedBlogPage() {
     return(
         <>
           <div className="flex flex-col gap-4 border-2 border-gray-300 rounded-[8px] w-full min-h-[60vh] p-4">
