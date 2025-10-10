@@ -12,6 +12,12 @@ export default function Footer() {
               Coded in <strong>Visual Studio Code</strong><br/>
               Deployed in <strong>Vercel</strong><br/>
               <br/>
+              <p className="text-xs">Heavily Inspired by: <strong>Rustcode</strong>'s:<br />
+                <a href="https://codepen.io/rustcode/pen/YPPbxYX" target="_blank" className="hover:text-indigo-500 hover:underline transition-all duration-100 ease ">
+                  Basic Neo Brutalist Component Library
+                </a><br/>
+              </p>
+              <br/>
               <span className="text-gray-600">© Copyright 2025 Denver Dela Masa</span>
             </div>
           </div>
