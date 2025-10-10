@@ -1,23 +1,8 @@
-'use client';
-
-import { useState } from "react";
-
-import Featured from "@/app/blog/Featured";
-import Popular from "@/app/blog/Popular";
-import Recent from "@/app/blog/Recent";
-
+import Featured from "@/app/blog/content/Featured";
+import PopularBlogPage from "@/app/blog/content/Popular";
+import RecentBlogPage from "@/app/blog/content/Recent";
 
 export default function Blog() {
-  const [activeSection, setActiveSection] = useState("popular");
-
-  const handlePopularBlogsClick = () => {
-    setActiveSection("popular");
-  };
-
-  const handleRecentBlogsClick = () => {
-    setActiveSection("recent");
-  };
-
   return (
     <>
       <main className="hero flex flex-col gap-8 my-8 text-black">
@@ -25,44 +10,15 @@ export default function Blog() {
           <Featured />
         </section>
 
-        <section className="hero-content flex flex-col gap-8 w-full justify-left items-start ">
-          <div className="flex flex-row gap-4 align-middle">
-            <button
-              className={`neo-brutalist hover:bg-purple-800 bg-purple-700 px-4 py-2 text-white w-fit ${
-                activeSection === "popular" ? "active" : ""
-              }`}
-              onClick={handlePopularBlogsClick}
-            >
-              <i className="bi bi-fire mr-2"></i>
-              Popular Blogs
-            </button>
-            <button
-              className={`neo-brutalist hover:bg-orange-500 bg-orange-400 px-4 py-2 text-white w-fit ${
-                activeSection === "recent" ? "active" : ""
-              }`}
-              onClick={handleRecentBlogsClick}
-            >
-              <i className="bi bi-clock-history mr-2"></i>
-              Recent Blogs
-            </button>
-          </div>
-        </section>
-
         <section className="hero-content flex flex-col gap-8 w-full">
-          <div className={`flex flex-col gap-8 w-full ${activeSection === "recent" ? "hidden" : ""}`}>
-            <Popular />
+          <div className="flex flex-col gap-8 bg-purple-700 rounded-[8px] w-full">
+            <PopularBlogPage />
           </div>
-          <div className={`flex flex-col gap-8 w-full ${activeSection === "popular" ? "hidden" : ""}`}>
-            <Recent />
+          <div className="flex flex-col gap-8 grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-full">
+            <RecentBlogPage />
           </div>
         </section>
       </main>
-      <style jsx>{`
-        .active {
-          background-color: #3f3f3f36;
-          color: #000;
-        }
-      `}</style>
     </>
   );
 }
