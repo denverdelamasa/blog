@@ -1,5 +1,5 @@
 import { getAllPosts, PostMeta } from "@/lib/posts";
-import Featured from "@/app/blog/content/FeaturedBlogPage";
+import Featured from "@/app/blog/content/Featured";
 import PopularBlogPage from "@/app/blog/content/PopularBlogPage";
 import RecentBlogPage from "@/app/blog/content/RecentBlogPage";
 
