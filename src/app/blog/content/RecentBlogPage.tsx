@@ -36,7 +36,7 @@ export default function RecentBlogs({ posts }: { posts: PostMeta[] }) {
             <i className="bi bi-newspaper text-black text-[5vh]"></i>
           </div>
           <h1 className="text-black text-6xl my-auto">
-            All my posts!
+            All posts
           </h1>
         </div>
       </div>
