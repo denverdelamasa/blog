@@ -9,6 +9,17 @@ export default function RecentBlogs({ posts }: { posts: PostMeta[] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const postsPerLoad = 3;
 
+  // Debug: Check for duplicate slugs
+  const slugCounts = posts.reduce((acc, post) => {
+    acc[post.slug] = (acc[post.slug] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  const duplicates = Object.entries(slugCounts).filter(([_, count]) => count > 1);
+  if (duplicates.length > 0) {
+    console.warn('Duplicate slugs found:', duplicates);
+  }
+
   // Filter posts based on search query
   const filteredPosts = posts.filter((post) =>
     post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -57,17 +68,16 @@ export default function RecentBlogs({ posts }: { posts: PostMeta[] }) {
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
-              setVisibleCount(postsPerLoad); // Reset to initial count on new search
+              setVisibleCount(postsPerLoad);
             }}
           />
         </div>
       </div>
-      {/* --- End of Search Bar --- */}
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {displayedPosts.map((post) => (
+        {displayedPosts.map((post, index) => (
           <div
-            key={post.slug}
+            key={`${post.slug}-${index}`} // Added index to make key unique
             className="neo-brutalist flex flex-col justify-between bg-white"
           >
             <div>
@@ -91,7 +101,6 @@ export default function RecentBlogs({ posts }: { posts: PostMeta[] }) {
         ))}
       </div>
 
-      {/* Show "No results" message if searching and no posts are found */}
       {isSearching && filteredPosts.length === 0 && (
         <div className="text-center py-8">
           <p className="text-gray-600">No posts found matching your search.</p>
@@ -99,7 +108,6 @@ export default function RecentBlogs({ posts }: { posts: PostMeta[] }) {
       )}
 
       <div className="flex my-4 justify-end">
-        {/* Show More/Less buttons - hidden when searching */}
         {hasMorePosts && !isSearching && (
           <button
             onClick={loadMore}
