@@ -41,7 +41,6 @@ export default function RecentBlogs({ posts }: { posts: PostMeta[] }) {
         </div>
       </div>
 
-      {/* --- Search Bar --- */}
       <div className="mt-4 mb-12 max-w-2xl justify-start w-full">
         <label htmlFor="blog-search" className="sr-only">Search blog posts</label>
         <div className="relative">
