@@ -116,7 +116,7 @@ export default function RecentBlogs({ posts }: { posts: PostMeta[] }) {
           >
             <i className="bi bi-chevron-down mr-2"></i>
             Show More
-          </button>
+          </button> 
         )}
         {visibleCount > 3 && !isSearching && (
           <button
