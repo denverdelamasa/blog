@@ -10,10 +10,10 @@ export default async function RecentBlogs() {
     <div className="flex flex-col my-12 mx-4 align-middle">
         <div className="text-end mb-4">
             <div className="flex flex-row align-middle gap-4"> 
-                <div className="my-auto w-[8vh] h-[8vh] neo-brutalist bg-white flex items-center justify-center">
-                    <i className="bi bi-newspaper text-black text-[5vh]"></i>
+                <div className="my-auto w-[8vh] h-[8vh] xl:w-[12vh] xl:h-[12vh] neo-brutalist bg-white flex items-center justify-center">
+                    <i className="bi bi-newspaper text-black text-[5vh] xl:text-[8vh]"></i>
                 </div>
-                <h1 className="text-black text-6xl my-auto">
+                <h1 className="text-black text-6xl xl:text-8xl my-auto">
                     Recent
                 </h1>
             </div>
