@@ -8,4 +8,4 @@ tags: ["design", "nextjs"]
 
 # Hello!
 
-Write in Markdown. Add images with `![alt](/images/ok.png)` (relative to public/).
+Write in Markdown. Add images with ![alt](/images/ok.png) (relative to public/).

@@ -18,7 +18,7 @@ export default async function PostPage(props: Params) {
 
   return (
     <main className='flex flex-col gap-8 my-8'>
-      <section className="max-w-3xl mx-auto py-12 px-4">
+      <section className="w-3xl mx-auto py-12 px-4">
         <article>
           <h1 className="text-4xl font-bold mb-2 text-black">{post.frontMatter.title}</h1>
           <p className="text-sm opacity-70 mb-6 text-gray-400">{post.frontMatter.date}</p>
