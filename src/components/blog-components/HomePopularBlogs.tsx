@@ -18,7 +18,7 @@ export default async function PopularBlogs() {
       <div className="text-end mb-4">
         <div className="flex flex-row align-middle gap-4">
           <div className="my-auto w-[8vh] h-[8vh] xl:w-[12vh] xl:h-[12vh] neo-brutalist bg-purple-700 flex items-center justify-center">
-            <i className="bi bi-fire text-white text-[5vh] xl:text-[8vh]"></i>
+            <i className="bi bi-fire text-white text-[5vh] xl:text-6xl"></i>
           </div>
           <h1 className="text-white text-6xl xl:text-8xl my-auto">
             Popular

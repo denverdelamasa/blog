@@ -5,10 +5,10 @@ export default function About() {
     <>
         <div className="flex flex-col text-black w-auto h-full justify-start md:items-start my-12 mx-4">
             <div className="flex flex-row mb-4">
-                <div className="my-auto w-[8vh] h-[8vh] m-4 neo-brutalist  flex items-center justify-center">
-                    <i className="bi bi-info-circle text-white text-[5vh]"></i>
+                <div className="my-auto w-[8vh] h-[8vh] xl:w-[12vh] xl:h-[12vh] m-4 neo-brutalist flex items-center justify-center">
+                    <i className="bi bi-info-circle text-white text-[5vh] xl:text-6xl"></i>
                 </div>
-                <h1 className="text-white text-6xl text-wrap my-auto">
+                <h1 className="text-white text-6xl xl:text-8xl text-wrap my-auto">
                     About
                 </h1>
             </div>
