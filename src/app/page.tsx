@@ -3,35 +3,39 @@ import PopularBlogs from "@/components/blog-components/HomePopularBlogs"
 import RecentBlogs from "@/components/blog-components/HomeRecentBlogs";
 import About from "./About";
 
+import AppLoaderWrapper from "@/components/AppLoaderWrapper";
+
 export default function Home() {
   return (
     <>
-      <main className="hero flex flex-col gap-8 my-8">
-        <section className="hero-content flex flex-row gap-4 items-stretch">
-          <aside className="neo-brutalist aside-pattern hidden md:block w-32"></aside>
-          <div className="flex grainy-bg border-2 border-gray-300 rounded-[8px]">
-            <HomepageHero/>
-          </div>
-        </section>
-        <section className="hero-content flex flex-col gap-8">
-          <div className="flex flex-row h-auto gap-4">
-            <div className="bg-purple-700 rounded-[8px] w-full">
-              <PopularBlogs/>
+      <AppLoaderWrapper>
+        <main className="hero flex flex-col gap-8 my-8">
+          <section className="hero-content flex flex-row gap-4 items-stretch">
+            <aside className="neo-brutalist aside-pattern hidden md:block w-32"></aside>
+            <div className="flex grainy-bg border-2 border-gray-300 rounded-[8px]">
+              <HomepageHero/>
             </div>
-          </div>
-          <div className="flex flex-row h-auto gap-4">
-            <div className="grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-full">
-              <RecentBlogs/>
+          </section>
+          <section className="hero-content flex flex-col gap-8">
+            <div className="flex flex-row h-auto gap-4">
+              <div className="bg-purple-700 rounded-[8px] w-full">
+                <PopularBlogs/>
+              </div>
             </div>
-          </div>
-          <div id="about" className="flex flex-row h-auto gap-4 w-full">
-            <div className="flex bg-orange-400 rounded-[8px] justify-between w-full md:w-9/10">
-              <About/>
+            <div className="flex flex-row h-auto gap-4">
+              <div className="grainy-bg bg-white border-2 border-gray-300 rounded-[8px] w-full">
+                <RecentBlogs/>
+              </div>
             </div>
-            <aside className="neo-brutalist aside-pattern hidden md:block w-1/10"></aside>
-          </div>
-        </section>
-      </main>
+            <div id="about" className="flex flex-row h-auto gap-4 w-full">
+              <div className="flex bg-orange-400 rounded-[8px] justify-between w-full md:w-9/10">
+                <About/>
+              </div>
+              <aside className="neo-brutalist aside-pattern hidden md:block w-1/10"></aside>
+            </div>
+          </section>
+        </main>
+      </AppLoaderWrapper>
     </>
   );
 }
