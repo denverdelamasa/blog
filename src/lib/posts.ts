@@ -40,6 +40,7 @@ export async function getPostBySlug(slug: string) {
     if (fileSlug === slug) {
       const processed = await remark().use(html).process(content)
       const contentHtml = processed.toString()
+      console.log('Generated HTML:', contentHtml) // for debugging
       return {
         frontMatter: data,
         contentHtml,
