@@ -6,6 +6,23 @@ excerpt: "Tiny preview... Lorem ipsum dolor sit amet, consectetur adipiscing eli
 tags: ["design", "nextjs"]
 ---
 
-# Hello!
+# This is my first test post!
 
-Write in Markdown. Add images with ![alt](/images/ok.png) (relative to public/).
+this'll be the first post I'll have on my blog... just to test things out and to see if certain
+features are working... maybe I'll add some markdown syntaxes here just to also check how they'd look...
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+This is a paragraph
+
+This has a text with **bold**
+
+This has a text with *italic*
+
+This has a text with both ***italic & bold***
+
+> This is a blockquote.
