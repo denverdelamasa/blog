@@ -21,7 +21,7 @@ export default async function PostPage(props: Params) {
   const post = await getPostBySlug(slug)
 
   // Fallback thumbnail in case none is provided
-  const fallbackThumbnail = "https://images.unsplash.com/photo-1594568284297-7c64464062b1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  const fallbackThumbnail = "https://avatars.githubusercontent.com/u/111408088?v=4"
 
   // Use the thumbnail from frontMatter or fallback
   const thumbnail = post.frontMatter.thumbnail || fallbackThumbnail
@@ -31,15 +31,19 @@ export default async function PostPage(props: Params) {
       <main className='flex flex-col gap-8 my-8'>
         <section className="max-w-3xl mx-auto py-12 px-4">
           <article>
-            <h1 className="text-6xl font-bold mb-2 text-black">{post.frontMatter.title}</h1>
+            <h1 className="text-6xl font-extrabold mb-2 text-black">{post.frontMatter.title}</h1>
+              <p className="text-md opacity-70 text-gray-900 mb-4">{post.frontMatter.excerpt}</p>
+              <span className='flex flex-row align-middle mb-2'>
+              <img alt="avatar" src="/avatar.png" className="w-8 h-8 rounded-full my-auto" />
+              <p className="text-md opacity-70 text-gray-800 ml-2 my-auto">denverdelamasa</p>
+            </span>
             <p className="text-sm opacity-70 mb-6 text-gray-600">{post.frontMatter.date}</p>
-            
             <img 
               alt={`Thumbnail for ${post.frontMatter.title}`} 
               width={650} 
               height={250} 
               src={thumbnail}
-              className='neo-brutalist object-cover w-full max-w-full h-auto'
+              className='neo-brutalist object-cover w-full max-w-full max-h-82'
             />
             
             <div
