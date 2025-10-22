@@ -23,16 +23,12 @@ export default async function PostPage(props: Params) {
       <main className='flex flex-col gap-8 my-8'>
         <section className="max-w-3xl mx-auto py-12 px-4">
           <article>
-            <h1 className="text-4xl font-bold mb-2 text-black">{post.frontMatter.title}</h1>
-            <p className="text-sm opacity-70 mb-6 text-gray-400">{post.frontMatter.date}</p>
-
-            {/* Test with basic prose class first */}
+            <h1 className="text-6xl font-bold mb-2 text-black">{post.frontMatter.title}</h1>
+            <p className="text-sm opacity-70 mb-6 text-gray-600">{post.frontMatter.date}</p>
             <div
               className="markdown-content text-gray-800"
               dangerouslySetInnerHTML={{ __html: post.contentHtml }}
             />
-
-            {/* Rest of your code remains the same */}
             <div className="flex flex-col mt-12 neo-brutalist">
               <div className="flex flex-row gap-2 align-middle justify-start items-center p-4 w-full bg-gray-200 border-b-4 border-black">
                 <i className="bi bi-chat-right-text text-black text-3xl"></i>
