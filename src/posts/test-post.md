@@ -5,6 +5,7 @@ date: "2025-09-29"
 excerpt: "this blog post is solely for testing my typography in the [slug] page..."
 tags: ["test", "markdown", "typography"]
 thumbnail: ""
+author: "denverdelamasa"
 ---
 
 # This is my first test post!

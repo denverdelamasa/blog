@@ -15,6 +15,7 @@ export interface FrontMatter {
   tags?: string[]
   slug: string
   thumbnail?: string
+  author: string
 }
 
 export interface PostData {
@@ -39,6 +40,7 @@ export async function getAllPosts(): Promise<PostMeta[]> {
       tags: data.tags ?? [],
       slug: data.slug ?? fileSlug,
       thumbnail: data.thumbnail ?? '',
+      author: data.author ?? '',
     } as PostMeta
   })
   
@@ -65,6 +67,7 @@ export async function getPostBySlug(slug: string): Promise<PostData> {
         tags: data.tags ?? [],
         slug: fileSlug,
         thumbnail: data.thumbnail ?? '',
+        author: data.author ?? '',
       }
       
       return {

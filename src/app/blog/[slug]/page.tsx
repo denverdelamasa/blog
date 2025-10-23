@@ -32,11 +32,10 @@ export default async function PostPage(props: Params) {
         <section className="max-w-3xl mx-auto py-12 px-4">
           <article>
             <h1 className="text-6xl font-extrabold mb-2 text-black">{post.frontMatter.title}</h1>
-              <p className="text-md opacity-70 text-gray-900 mb-4">{post.frontMatter.excerpt}</p>
+              <p className="text-md opacity-70 text-gray-900">{post.frontMatter.excerpt}</p>
               <span className='flex flex-row align-middle mb-2'>
-              <img alt="avatar" src="/avatar.png" className="w-8 h-8 rounded-full my-auto" />
-              <p className="text-md opacity-70 text-gray-800 ml-2 my-auto">denverdelamasa</p>
-            </span>
+                <p className="text-md opacity-70 text-gray-600 my-auto">by: {post.frontMatter.author}</p>
+              </span>
             <p className="text-sm opacity-70 mb-6 text-gray-600">{post.frontMatter.date}</p>
             <img 
               alt={`Thumbnail for ${post.frontMatter.title}`} 
