@@ -6,11 +6,11 @@ export default function HomepageHero() {
     <>
         <div className="hero-content flex flex-col lg:flex-row justify-evenly text-black w-full h-full m-4">
             <div className="flex flex-col gap-2">
-                <h1 className="text-5xl md:text-8xl break-normal">
-                    Welcome to my Blog!
+                <h1 className="text-5xl md:text-7xl break-normal">
+                    Welcome to my blog!
                 </h1>
                 <p className="text-sm md:text-xl text-gray-600">
-                    ● a place where I jot stuff down.
+                    ● a place where I yap.
                 </p>
             </div>
             <div className="bg-white neo-brutalist w-full flex flex-col mb-8">
