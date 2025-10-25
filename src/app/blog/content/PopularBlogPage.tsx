@@ -6,6 +6,9 @@ export default async function PopularBlogPage() {
   const posts: PostMeta[] = await getAllPosts();
   const popularSlugs = await getPopularPosts(posts, 3);
 
+  // Fallback thumbnail in case none is provided
+  const fallbackThumbnail = "https://avatars.githubusercontent.com/u/111408088?v=4";
+
   const popularPosts = popularSlugs
     .map(slug => posts.find(p => p.slug === slug))
     .filter(Boolean) as PostMeta[];
@@ -23,36 +26,48 @@ export default async function PopularBlogPage() {
         </div>
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {popularPosts.map((post, idx) => (
-          <div
-            key={post.slug}
-            className="neo-brutalist flex flex-col justify-between bg-white"
-          >
-            <div>
-              <div className="flex justify-end h-16 bg-gray-200 mb-2 px-4 border-b-4 border-black">
-                {idx === 0 && (
+        {popularPosts.map((post, idx) => {
+          // Use the thumbnail from post or fallback
+          const thumbnail = post.thumbnail || fallbackThumbnail;
+          
+          return (
+            <div
+              key={post.slug}
+              className="neo-brutalist flex flex-col justify-between bg-white"
+            >
+              <div>
+                <div className="flex h-24 bg-gray-200 border-b-4 border-black">
+                  <img 
+                    src={thumbnail} 
+                    alt="thumbnail" 
+                    className="w-full h-full border-2 object-cover"
+                  />
+                </div>
+                <div className="p-4">
+                <div className="flex justify-end h-0 bg-white">
+                  {idx === 0 && (
                     <span className="neo-brutalist inline-block hover:bg-red-600 bg-red-500 text-white text-sm font-bold py-1 px-3 my-auto">
                         <i className="bi bi-fire text-white my-auto mr-1"></i>
                         Hot!
                     </span>
-                )}
+                  )}
+                </div>
+                  <h3 className="text-black text-2xl font-semibold mb-2">{post.title}</h3>
+                  <p className="text-gray-400 text-sm mb-4">{post.date}</p>
+                  {post.excerpt && (
+                    <p className="mb-4 text-gray-900 line-clamp-3">{post.excerpt}</p>
+                  )}
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="text-black text-2xl font-semibold mb-2">{post.title}</h3>
-                <p className="text-gray-400 text-sm mb-4">{post.date}</p>
-                {post.excerpt && (
-                  <p className="mb-4 text-gray-900 line-clamp-3">{post.excerpt}</p>
-                )}
-              </div>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="m-4 neo-brutalist hover:bg-orange-500 bg-orange-400 px-4 py-2 text-white w-fit"
+              >
+                Read <i className="bi bi-arrow-right"></i>
+              </Link>
             </div>
-            <Link
-              href={`/blog/${post.slug}`}
-              className="m-4 neo-brutalist hover:bg-orange-500 bg-orange-400 px-4 py-2 text-white w-fit"
-            >
-              Read <i className="bi bi-arrow-right"></i>
-            </Link>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
